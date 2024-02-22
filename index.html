@@ -57,7 +57,7 @@
 }
 
 .coordinator-details h2 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #333333; /* Dark grey color for the heading */
   margin-bottom: 10px;
 }
@@ -65,9 +65,13 @@
 .coordinator-details p {
   color: #333333; /* Dark grey color for the paragraph text */
   line-height: 1.6;
-  margin-bottom: 10px; /* Space between lines */
+  margin-top: 0;
+  margin-bottom: 0px; /* Space between lines */
 }
-
+/* If you want to target only the first paragraph after h2 specifically */
+.coordinator-details h2 + p {
+  margin-top: 0; /* Removes space only from the first paragraph after h2 */
+}
 .coordinator-details a {
   color: #0056b3; /* Color for email link, can match the button color */
   text-decoration: none; /* Optional: removes underline from the link */
@@ -199,9 +203,9 @@ footer {
       </section>
       <section class="coordinator-details">
         <div class="container">
-          <h2>Coordinator</h2>
+          <h2>Coordinator :</h2>
           <p>Kapil Uniyara</p>
-          <p>Mobile No: (+91) 8529084399</p>
+          <p>Mobile No: 8529084399</p>
           <p>Email: <a href="mailto:uniyarakapil@gmail.com">uniyarakapil@gmail.com</a></p>
         </div>
       </section>
